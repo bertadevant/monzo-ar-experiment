@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143B201F317600D92AFD /* AppDelegate.swift */; };
+		71BD143E201F317600D92AFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143D201F317600D92AFD /* ViewController.swift */; };
+		71BD1441201F317600D92AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BD143F201F317600D92AFD /* Main.storyboard */; };
+		71BD1443201F317600D92AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1442201F317600D92AFD /* Assets.xcassets */; };
+		71BD1446201F317600D92AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1444201F317600D92AFD /* LaunchScreen.storyboard */; };
+		71BD1451201F317700D92AFD /* Monzo_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD1450201F317700D92AFD /* Monzo_ARTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71BD144D201F317700D92AFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71BD1430201F317600D92AFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71BD1437201F317600D92AFD;
+			remoteInfo = "Monzo AR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71BD1438201F317600D92AFD /* Monzo AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monzo AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BD143B201F317600D92AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71BD143D201F317600D92AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71BD1440201F317600D92AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71BD1442201F317600D92AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71BD1445201F317600D92AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71BD1447201F317600D92AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BD144C201F317700D92AFD /* Monzo ARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monzo ARTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BD1450201F317700D92AFD /* Monzo_ARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monzo_ARTests.swift; sourceTree = "<group>"; };
+		71BD1452201F317700D92AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71BD1435201F317600D92AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BD1449201F317700D92AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71BD142F201F317600D92AFD = {
+			isa = PBXGroup;
+			children = (
+				71BD143A201F317600D92AFD /* Monzo AR */,
+				71BD144F201F317700D92AFD /* Monzo ARTests */,
+				71BD1439201F317600D92AFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71BD1439201F317600D92AFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71BD1438201F317600D92AFD /* Monzo AR.app */,
+				71BD144C201F317700D92AFD /* Monzo ARTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71BD143A201F317600D92AFD /* Monzo AR */ = {
+			isa = PBXGroup;
+			children = (
+				71BD143B201F317600D92AFD /* AppDelegate.swift */,
+				71BD143D201F317600D92AFD /* ViewController.swift */,
+				71BD143F201F317600D92AFD /* Main.storyboard */,
+				71BD1442201F317600D92AFD /* Assets.xcassets */,
+				71BD1444201F317600D92AFD /* LaunchScreen.storyboard */,
+				71BD1447201F317600D92AFD /* Info.plist */,
+			);
+			path = "Monzo AR";
+			sourceTree = "<group>";
+		};
+		71BD144F201F317700D92AFD /* Monzo ARTests */ = {
+			isa = PBXGroup;
+			children = (
+				71BD1450201F317700D92AFD /* Monzo_ARTests.swift */,
+				71BD1452201F317700D92AFD /* Info.plist */,
+			);
+			path = "Monzo ARTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71BD1437201F317600D92AFD /* Monzo AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BD1455201F317700D92AFD /* Build configuration list for PBXNativeTarget "Monzo AR" */;
+			buildPhases = (
+				71BD1434201F317600D92AFD /* Sources */,
+				71BD1435201F317600D92AFD /* Frameworks */,
+				71BD1436201F317600D92AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Monzo AR";
+			productName = "Monzo AR";
+			productReference = 71BD1438201F317600D92AFD /* Monzo AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71BD144B201F317700D92AFD /* Monzo ARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BD1458201F317700D92AFD /* Build configuration list for PBXNativeTarget "Monzo ARTests" */;
+			buildPhases = (
+				71BD1448201F317700D92AFD /* Sources */,
+				71BD1449201F317700D92AFD /* Frameworks */,
+				71BD144A201F317700D92AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71BD144E201F317700D92AFD /* PBXTargetDependency */,
+			);
+			name = "Monzo ARTests";
+			productName = "Monzo ARTests";
+			productReference = 71BD144C201F317700D92AFD /* Monzo ARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71BD1430201F317600D92AFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Novoda;
+				TargetAttributes = {
+					71BD1437201F317600D92AFD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					71BD144B201F317700D92AFD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71BD1437201F317600D92AFD;
+					};
+				};
+			};
+			buildConfigurationList = 71BD1433201F317600D92AFD /* Build configuration list for PBXProject "Monzo AR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71BD142F201F317600D92AFD;
+			productRefGroup = 71BD1439201F317600D92AFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71BD1437201F317600D92AFD /* Monzo AR */,
+				71BD144B201F317700D92AFD /* Monzo ARTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71BD1436201F317600D92AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BD1446201F317600D92AFD /* LaunchScreen.storyboard in Resources */,
+				71BD1443201F317600D92AFD /* Assets.xcassets in Resources */,
+				71BD1441201F317600D92AFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BD144A201F317700D92AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71BD1434201F317600D92AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BD143E201F317600D92AFD /* ViewController.swift in Sources */,
+				71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BD1448201F317700D92AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BD1451201F317700D92AFD /* Monzo_ARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71BD144E201F317700D92AFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71BD1437201F317600D92AFD /* Monzo AR */;
+			targetProxy = 71BD144D201F317700D92AFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71BD143F201F317600D92AFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71BD1440201F317600D92AFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71BD1444201F317600D92AFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71BD1445201F317600D92AFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71BD1453201F317700D92AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71BD1454201F317700D92AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71BD1456201F317700D92AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Monzo AR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71BD1457201F317700D92AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Monzo AR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71BD1459201F317700D92AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Monzo ARTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-ARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monzo AR.app/Monzo AR";
+			};
+			name = Debug;
+		};
+		71BD145A201F317700D92AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Monzo ARTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-ARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monzo AR.app/Monzo AR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71BD1433201F317600D92AFD /* Build configuration list for PBXProject "Monzo AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BD1453201F317700D92AFD /* Debug */,
+				71BD1454201F317700D92AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BD1455201F317700D92AFD /* Build configuration list for PBXNativeTarget "Monzo AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BD1456201F317700D92AFD /* Debug */,
+				71BD1457201F317700D92AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BD1458201F317700D92AFD /* Build configuration list for PBXNativeTarget "Monzo ARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BD1459201F317700D92AFD /* Debug */,
+				71BD145A201F317700D92AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71BD1430201F317600D92AFD /* Project object */;
+}
