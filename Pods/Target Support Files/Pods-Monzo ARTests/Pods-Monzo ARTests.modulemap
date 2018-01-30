@@ -1,0 +1,6 @@
+framework module Pods_Monzo_ARTests {
+  umbrella header "Pods-Monzo ARTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

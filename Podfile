@@ -6,6 +6,7 @@ target 'Monzo AR' do
   use_frameworks!
 
   # Pods for Monzo AR
+  pod 'Hydra'
 
   target 'Monzo ARTests' do
     inherit! :search_paths

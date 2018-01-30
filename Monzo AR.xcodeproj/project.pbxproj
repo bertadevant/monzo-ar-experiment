@@ -13,6 +13,9 @@
 		71BD1443201F317600D92AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1442201F317600D92AFD /* Assets.xcassets */; };
 		71BD1446201F317600D92AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1444201F317600D92AFD /* LaunchScreen.storyboard */; };
 		71BD1451201F317700D92AFD /* Monzo_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD1450201F317700D92AFD /* Monzo_ARTests.swift */; };
+		71EC61FF2020D0CE00CF5F46 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC61FE2020D0CE00CF5F46 /* NetworkingManager.swift */; };
+		79B907D7C1F7F7AB957EEC16 /* Pods_Monzo_AR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC651F44DCD64445D75585B /* Pods_Monzo_AR.framework */; };
+		7AC5C147687CA327010D1862 /* Pods_Monzo_ARTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF95AC1D1B8407877D3680 /* Pods_Monzo_ARTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DFF08F7D1A97A70B5B8D583 /* Pods-Monzo ARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo ARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.release.xcconfig"; sourceTree = "<group>"; };
 		71BD1438201F317600D92AFD /* Monzo AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monzo AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD143B201F317600D92AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71BD143D201F317600D92AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		71BD144C201F317700D92AFD /* Monzo ARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monzo ARTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD1450201F317700D92AFD /* Monzo_ARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monzo_ARTests.swift; sourceTree = "<group>"; };
 		71BD1452201F317700D92AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71EC61FE2020D0CE00CF5F46 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		77563C86A6366E8BB68CBD53 /* Pods-Monzo AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR.debug.xcconfig"; sourceTree = "<group>"; };
+		9F597CD31ED9E1516E5FC08C /* Pods-Monzo ARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo ARTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B263E4341FB4264D61AF4367 /* Pods-Monzo AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR.release.xcconfig"; sourceTree = "<group>"; };
+		DABF95AC1D1B8407877D3680 /* Pods_Monzo_ARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monzo_ARTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC651F44DCD64445D75585B /* Pods_Monzo_AR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monzo_AR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B907D7C1F7F7AB957EEC16 /* Pods_Monzo_AR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC5C147687CA327010D1862 /* Pods_Monzo_ARTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3742224677B4D98A4500124B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBC651F44DCD64445D75585B /* Pods_Monzo_AR.framework */,
+				DABF95AC1D1B8407877D3680 /* Pods_Monzo_ARTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71BD142F201F317600D92AFD = {
 			isa = PBXGroup;
 			children = (
 				71BD143A201F317600D92AFD /* Monzo AR */,
 				71BD144F201F317700D92AFD /* Monzo ARTests */,
 				71BD1439201F317600D92AFD /* Products */,
+				72F872A91C5C48F347717B1B /* Pods */,
+				3742224677B4D98A4500124B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +100,7 @@
 		71BD143A201F317600D92AFD /* Monzo AR */ = {
 			isa = PBXGroup;
 			children = (
+				71EC62002020D1D300CF5F46 /* Networking */,
 				71BD143B201F317600D92AFD /* AppDelegate.swift */,
 				71BD143D201F317600D92AFD /* ViewController.swift */,
 				71BD143F201F317600D92AFD /* Main.storyboard */,
@@ -96,6 +120,25 @@
 			path = "Monzo ARTests";
 			sourceTree = "<group>";
 		};
+		71EC62002020D1D300CF5F46 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				71EC61FE2020D0CE00CF5F46 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		72F872A91C5C48F347717B1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77563C86A6366E8BB68CBD53 /* Pods-Monzo AR.debug.xcconfig */,
+				B263E4341FB4264D61AF4367 /* Pods-Monzo AR.release.xcconfig */,
+				9F597CD31ED9E1516E5FC08C /* Pods-Monzo ARTests.debug.xcconfig */,
+				2DFF08F7D1A97A70B5B8D583 /* Pods-Monzo ARTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71BD1455201F317700D92AFD /* Build configuration list for PBXNativeTarget "Monzo AR" */;
 			buildPhases = (
+				CB82516F401FA0A34FCB5275 /* [CP] Check Pods Manifest.lock */,
 				71BD1434201F317600D92AFD /* Sources */,
 				71BD1435201F317600D92AFD /* Frameworks */,
 				71BD1436201F317600D92AFD /* Resources */,
+				84A01C91D71E98B360A49B82 /* [CP] Embed Pods Frameworks */,
+				53009156C9141CB3578F3031 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71BD1458201F317700D92AFD /* Build configuration list for PBXNativeTarget "Monzo ARTests" */;
 			buildPhases = (
+				811CC9017328CA78DEB35790 /* [CP] Check Pods Manifest.lock */,
 				71BD1448201F317700D92AFD /* Sources */,
 				71BD1449201F317700D92AFD /* Frameworks */,
 				71BD144A201F317700D92AFD /* Resources */,
+				1C0003581CBD8CCD6A829F5A /* [CP] Embed Pods Frameworks */,
+				72E21CABF193C08803EE22DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +243,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C0003581CBD8CCD6A829F5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53009156C9141CB3578F3031 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72E21CABF193C08803EE22DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		811CC9017328CA78DEB35790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Monzo ARTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84A01C91D71E98B360A49B82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hydra/Hydra.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB82516F401FA0A34FCB5275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Monzo AR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71BD1434201F317600D92AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +352,7 @@
 			files = (
 				71BD143E201F317600D92AFD /* ViewController.swift in Sources */,
 				71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */,
+				71EC61FF2020D0CE00CF5F46 /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +503,7 @@
 		};
 		71BD1456201F317700D92AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77563C86A6366E8BB68CBD53 /* Pods-Monzo AR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +518,7 @@
 		};
 		71BD1457201F317700D92AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B263E4341FB4264D61AF4367 /* Pods-Monzo AR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +533,7 @@
 		};
 		71BD1459201F317700D92AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F597CD31ED9E1516E5FC08C /* Pods-Monzo ARTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,6 +550,7 @@
 		};
 		71BD145A201F317700D92AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFF08F7D1A97A70B5B8D583 /* Pods-Monzo ARTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

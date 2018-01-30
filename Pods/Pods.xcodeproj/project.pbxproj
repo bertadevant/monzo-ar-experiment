@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FEA231BD6115EF35C800DAA662B9E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		03441B28AE600CB118A18B605C5041A7 /* HYWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 388EA0E202BE2A6DEF70A23D0FB7DAA0 /* HYWorker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08A8D77AAD585CED65AA15730990F5D3 /* Hydra.m in Sources */ = {isa = PBXBuildFile; fileRef = FF72C1F3027FE7030798269806ABF639 /* Hydra.m */; };
+		25D67CE4445A21B7CAF0CC5BE1C81A41 /* HYTrackingResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B089A680A2F2D5E9439C0E3F5D8D5A /* HYTrackingResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DFC5868056C7264D4B5EEEADF6D6489 /* HYManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB535242983B0C04243ABD4D3B5154 /* HYManager.m */; };
+		2F850C4E8EC2AE15EC3699D9EB75FF78 /* HYMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0692569E93C7D3D382EDD16F54BEDD0C /* HYMigrator.m */; };
+		395F82B87B5E5C1A9952943CCF5F754C /* Hydra.h in Headers */ = {isa = PBXBuildFile; fileRef = B796E752FBFF70033A898F69967128FA /* Hydra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44B8EFB8478330CFA4993213E5A820BD /* Pods-Monzo ARTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE777B06E40CF24AE59C21503A1DF995 /* Pods-Monzo ARTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44F5731BA035DCB29E3372F7E41F5D9B /* HYExecuter.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B2488204475E14E167C8CF57A9BCE1 /* HYExecuter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E64551019BB7872C27CD0C4E2AA296A /* HYManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B7DFF2AED4DD7246B97755401B6300 /* HYManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8264B2C8001593B7FC3828F5F9C819 /* HYAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E48D0B34821F8B8EF029F63FA55E948A /* HYAsyncTask.m */; };
+		50A66ECA9A504799CA0EAFB075CCC219 /* HYExecuter.m in Sources */ = {isa = PBXBuildFile; fileRef = A690C7B7021D58F4B93AB2FE252505E7 /* HYExecuter.m */; };
+		52714AF389B5D1DA9930842CD99E23BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5B7DC052EC85968351DAA26EB948805D /* Hydra-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E339041C7FB4F5E6FFB11346DCB6807 /* Hydra-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EAC7C17C3128FED0037EF82300892E8 /* Pods-Monzo ARTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C62273394BF0AB8F11E68DE637C14557 /* Pods-Monzo ARTests-dummy.m */; };
+		764C9FD159E9734AAA68085332C00EB3 /* HYWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8554CBEAE75D9AA3813115B2E94420 /* HYWorker.m */; };
+		7781756F1A6499A6ACC5A8BBA66B97AB /* HYAsyncTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD7BE25577B7497E9E8C112BB156E9A /* HYAsyncTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E6A1BCAD943FA8FD54F67CC74A61E9B /* Hydra-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C1BD2B41F12CE2594F4617B385173D /* Hydra-dummy.m */; };
+		A6F3849E184D7349DB0E2A3262DA61E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A7513E65C3A638BF36E5D9E7EEDD18E0 /* HYQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 44ED8034DBF1F7C25AFD74062A7EE817 /* HYQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1376C418CAF305A1ADC4D17D7E7FAA /* HYMigrator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2880ED1A3E4AB25BBA14806C8F617991 /* HYMigrator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0382937633201BA727354322815DBED /* HYDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = A555132567C0F6623E61C14C1C36E71D /* HYDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD1835EBF401DBC5FFF2F92ED0417CB4 /* HYResult.h in Headers */ = {isa = PBXBuildFile; fileRef = FD4CCF3B3616622EB0DC270697384248 /* HYResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC4E4F71A9E4B465F2550766EBEB8D65 /* Pods-Monzo AR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11161064ADE37B95DA6C496C96FCCA5 /* Pods-Monzo AR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEF2619F7558C3E6DC75C6050EB8FAD1 /* HYQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E60A6B58F0206484F1709EA24277A3 /* HYQuery.m */; };
+		D655C54790B8D5B3F0C9F80746DBF15C /* HYTrackingResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D100C49068E218C8EA57A8215673D0 /* HYTrackingResultSet.m */; };
+		DE04C70F6AB6DFD11A8BECFA48806F41 /* HYResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F54943B449BA82756EBE6339250328 /* HYResult.m */; };
+		FF849F9991BC17C872957C0DFD096696 /* Pods-Monzo AR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F2DC93C792AB0B59320ACB4AED87B2 /* Pods-Monzo AR-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A93CEAD7B9083EE4A70D17F52969EDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73C0A8CED3E5F55B4EAAD108E4046A6F;
+			remoteInfo = Hydra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E60A6B58F0206484F1709EA24277A3 /* HYQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYQuery.m; path = Hydra/Hydra/HYQuery.m; sourceTree = "<group>"; };
+		0692569E93C7D3D382EDD16F54BEDD0C /* HYMigrator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYMigrator.m; path = Hydra/Hydra/HYMigrator.m; sourceTree = "<group>"; };
+		10B2488204475E14E167C8CF57A9BCE1 /* HYExecuter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYExecuter.h; path = Hydra/Hydra/HYExecuter.h; sourceTree = "<group>"; };
+		1D40B181D2DCAA51D69C09F0A4664F16 /* Hydra.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Hydra.modulemap; sourceTree = "<group>"; };
+		1F646C83CF57F273E97102F314241A45 /* Pods-Monzo ARTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monzo ARTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2880ED1A3E4AB25BBA14806C8F617991 /* HYMigrator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYMigrator.h; path = Hydra/Hydra/HYMigrator.h; sourceTree = "<group>"; };
+		30410F184C44C06ADDB819F6E64148FF /* Pods-Monzo ARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monzo ARTests.debug.xcconfig"; sourceTree = "<group>"; };
+		388E38B79F91393EC5DE43DB0E8A8954 /* Pods-Monzo ARTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Monzo ARTests.modulemap"; sourceTree = "<group>"; };
+		388EA0E202BE2A6DEF70A23D0FB7DAA0 /* HYWorker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYWorker.h; path = Hydra/Hydra/HYWorker.h; sourceTree = "<group>"; };
+		3D673A7E646289212EA2E5931038AFE3 /* Hydra-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hydra-prefix.pch"; sourceTree = "<group>"; };
+		43F2DC93C792AB0B59320ACB4AED87B2 /* Pods-Monzo AR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Monzo AR-dummy.m"; sourceTree = "<group>"; };
+		44ED8034DBF1F7C25AFD74062A7EE817 /* HYQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYQuery.h; path = Hydra/Hydra/HYQuery.h; sourceTree = "<group>"; };
+		482A7155FA307A4C023BFB98DF866AD1 /* Hydra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hydra.framework; path = Hydra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDBBF3289857FA6391B9CC57E75D1DD /* Pods-Monzo AR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Monzo AR-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E339041C7FB4F5E6FFB11346DCB6807 /* Hydra-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hydra-umbrella.h"; sourceTree = "<group>"; };
+		4FAB3C6F1A918211856D0EF632CD4075 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B089A680A2F2D5E9439C0E3F5D8D5A /* HYTrackingResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYTrackingResultSet.h; path = Hydra/Hydra/HYTrackingResultSet.h; sourceTree = "<group>"; };
+		5723480C0D97463DCDDC26B28C79ECE4 /* Pods-Monzo AR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Monzo AR-resources.sh"; sourceTree = "<group>"; };
+		575100B840B7E36B3AC5558FC49E7A71 /* Pods-Monzo AR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monzo AR-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E23A241D9D014A5A4E8AE1158F4FFE4 /* Pods-Monzo ARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monzo ARTests.release.xcconfig"; sourceTree = "<group>"; };
+		61617DE953119E19941BD2D8E71E3AC8 /* Pods-Monzo AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monzo AR.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6857498DC4D8365ED3F35C6A5B688B34 /* Pods-Monzo ARTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Monzo ARTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		708CCD9B060504D8AB8E349632F2717F /* Pods_Monzo_ARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Monzo_ARTests.framework; path = "Pods-Monzo ARTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C1BD2B41F12CE2594F4617B385173D /* Hydra-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hydra-dummy.m"; sourceTree = "<group>"; };
+		8CAD35581923159F51A60D5B59488477 /* Pods-Monzo ARTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Monzo ARTests-frameworks.sh"; sourceTree = "<group>"; };
+		91FBEFADC2D5C389EDB54DCCFB399481 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		973B5E3945819DA469EB008B263C638D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D100C49068E218C8EA57A8215673D0 /* HYTrackingResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYTrackingResultSet.m; path = Hydra/Hydra/HYTrackingResultSet.m; sourceTree = "<group>"; };
+		9DD7BE25577B7497E9E8C112BB156E9A /* HYAsyncTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYAsyncTask.h; path = Hydra/Hydra/HYAsyncTask.h; sourceTree = "<group>"; };
+		A555132567C0F6623E61C14C1C36E71D /* HYDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYDefine.h; path = Hydra/Hydra/HYDefine.h; sourceTree = "<group>"; };
+		A690C7B7021D58F4B93AB2FE252505E7 /* HYExecuter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYExecuter.m; path = Hydra/Hydra/HYExecuter.m; sourceTree = "<group>"; };
+		ADFB535242983B0C04243ABD4D3B5154 /* HYManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYManager.m; path = Hydra/Hydra/HYManager.m; sourceTree = "<group>"; };
+		B14DBA2BD6848CDA4E4A2C69ADE8CF4F /* Pods-Monzo AR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Monzo AR.modulemap"; sourceTree = "<group>"; };
+		B2F54943B449BA82756EBE6339250328 /* HYResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYResult.m; path = Hydra/Hydra/HYResult.m; sourceTree = "<group>"; };
+		B48E9A3355CBED0784CC256062017268 /* Hydra.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hydra.xcconfig; sourceTree = "<group>"; };
+		B796E752FBFF70033A898F69967128FA /* Hydra.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Hydra.h; path = Hydra/Hydra/Hydra.h; sourceTree = "<group>"; };
+		BAA45B2C959757EE2C721BB965540DAC /* Pods_Monzo_AR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Monzo_AR.framework; path = "Pods-Monzo AR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8554CBEAE75D9AA3813115B2E94420 /* HYWorker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYWorker.m; path = Hydra/Hydra/HYWorker.m; sourceTree = "<group>"; };
+		BE777B06E40CF24AE59C21503A1DF995 /* Pods-Monzo ARTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Monzo ARTests-umbrella.h"; sourceTree = "<group>"; };
+		C11161064ADE37B95DA6C496C96FCCA5 /* Pods-Monzo AR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Monzo AR-umbrella.h"; sourceTree = "<group>"; };
+		C62273394BF0AB8F11E68DE637C14557 /* Pods-Monzo ARTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Monzo ARTests-dummy.m"; sourceTree = "<group>"; };
+		C782DD51011FC7F0C8EE0D4BD4D4A368 /* Pods-Monzo AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monzo AR.release.xcconfig"; sourceTree = "<group>"; };
+		CCEDF586263A4247F48E33F9A819838C /* Pods-Monzo AR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Monzo AR-frameworks.sh"; sourceTree = "<group>"; };
+		E48D0B34821F8B8EF029F63FA55E948A /* HYAsyncTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYAsyncTask.m; path = Hydra/Hydra/HYAsyncTask.m; sourceTree = "<group>"; };
+		E5B7DFF2AED4DD7246B97755401B6300 /* HYManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYManager.h; path = Hydra/Hydra/HYManager.h; sourceTree = "<group>"; };
+		FD4CCF3B3616622EB0DC270697384248 /* HYResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYResult.h; path = Hydra/Hydra/HYResult.h; sourceTree = "<group>"; };
+		FF176BCFC5112BC44E6556E6A1BD94E1 /* Pods-Monzo ARTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Monzo ARTests-resources.sh"; sourceTree = "<group>"; };
+		FF72C1F3027FE7030798269806ABF639 /* Hydra.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Hydra.m; path = Hydra/Hydra/Hydra.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16427B8B255681ABB467472B83C1667F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FEA231BD6115EF35C800DAA662B9E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA09CB1465EE77BC32FF9034211BCF70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52714AF389B5D1DA9930842CD99E23BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C0FFCDA21E6EF1094B9890597EEE35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F3849E184D7349DB0E2A3262DA61E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529ED070A18145040234317E546BF06A /* Pods-Monzo AR */ = {
+			isa = PBXGroup;
+			children = (
+				973B5E3945819DA469EB008B263C638D /* Info.plist */,
+				B14DBA2BD6848CDA4E4A2C69ADE8CF4F /* Pods-Monzo AR.modulemap */,
+				4DDBBF3289857FA6391B9CC57E75D1DD /* Pods-Monzo AR-acknowledgements.markdown */,
+				575100B840B7E36B3AC5558FC49E7A71 /* Pods-Monzo AR-acknowledgements.plist */,
+				43F2DC93C792AB0B59320ACB4AED87B2 /* Pods-Monzo AR-dummy.m */,
+				CCEDF586263A4247F48E33F9A819838C /* Pods-Monzo AR-frameworks.sh */,
+				5723480C0D97463DCDDC26B28C79ECE4 /* Pods-Monzo AR-resources.sh */,
+				C11161064ADE37B95DA6C496C96FCCA5 /* Pods-Monzo AR-umbrella.h */,
+				61617DE953119E19941BD2D8E71E3AC8 /* Pods-Monzo AR.debug.xcconfig */,
+				C782DD51011FC7F0C8EE0D4BD4D4A368 /* Pods-Monzo AR.release.xcconfig */,
+			);
+			name = "Pods-Monzo AR";
+			path = "Target Support Files/Pods-Monzo AR";
+			sourceTree = "<group>";
+		};
+		6904684F03C3E045078B7723AFAC3A8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				482A7155FA307A4C023BFB98DF866AD1 /* Hydra.framework */,
+				BAA45B2C959757EE2C721BB965540DAC /* Pods_Monzo_AR.framework */,
+				708CCD9B060504D8AB8E349632F2717F /* Pods_Monzo_ARTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71D3B6F3CE0547A8478A5336787E8A9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC0540E3D022D271DCB7FDC79CF3EDA9 /* Hydra */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				71D3B6F3CE0547A8478A5336787E8A9F /* Pods */,
+				6904684F03C3E045078B7723AFAC3A8D /* Products */,
+				D1537ACF362FF91A523909B173D66828 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9D7A5D3A7CD9E4D381049B1F974F4F71 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D40B181D2DCAA51D69C09F0A4664F16 /* Hydra.modulemap */,
+				B48E9A3355CBED0784CC256062017268 /* Hydra.xcconfig */,
+				86C1BD2B41F12CE2594F4617B385173D /* Hydra-dummy.m */,
+				3D673A7E646289212EA2E5931038AFE3 /* Hydra-prefix.pch */,
+				4E339041C7FB4F5E6FFB11346DCB6807 /* Hydra-umbrella.h */,
+				4FAB3C6F1A918211856D0EF632CD4075 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Hydra";
+			sourceTree = "<group>";
+		};
+		A9A0FA4083640843DA4336CD622B36C9 /* Pods-Monzo ARTests */ = {
+			isa = PBXGroup;
+			children = (
+				91FBEFADC2D5C389EDB54DCCFB399481 /* Info.plist */,
+				388E38B79F91393EC5DE43DB0E8A8954 /* Pods-Monzo ARTests.modulemap */,
+				6857498DC4D8365ED3F35C6A5B688B34 /* Pods-Monzo ARTests-acknowledgements.markdown */,
+				1F646C83CF57F273E97102F314241A45 /* Pods-Monzo ARTests-acknowledgements.plist */,
+				C62273394BF0AB8F11E68DE637C14557 /* Pods-Monzo ARTests-dummy.m */,
+				8CAD35581923159F51A60D5B59488477 /* Pods-Monzo ARTests-frameworks.sh */,
+				FF176BCFC5112BC44E6556E6A1BD94E1 /* Pods-Monzo ARTests-resources.sh */,
+				BE777B06E40CF24AE59C21503A1DF995 /* Pods-Monzo ARTests-umbrella.h */,
+				30410F184C44C06ADDB819F6E64148FF /* Pods-Monzo ARTests.debug.xcconfig */,
+				5E23A241D9D014A5A4E8AE1158F4FFE4 /* Pods-Monzo ARTests.release.xcconfig */,
+			);
+			name = "Pods-Monzo ARTests";
+			path = "Target Support Files/Pods-Monzo ARTests";
+			sourceTree = "<group>";
+		};
+		BC0540E3D022D271DCB7FDC79CF3EDA9 /* Hydra */ = {
+			isa = PBXGroup;
+			children = (
+				9DD7BE25577B7497E9E8C112BB156E9A /* HYAsyncTask.h */,
+				E48D0B34821F8B8EF029F63FA55E948A /* HYAsyncTask.m */,
+				A555132567C0F6623E61C14C1C36E71D /* HYDefine.h */,
+				B796E752FBFF70033A898F69967128FA /* Hydra.h */,
+				FF72C1F3027FE7030798269806ABF639 /* Hydra.m */,
+				10B2488204475E14E167C8CF57A9BCE1 /* HYExecuter.h */,
+				A690C7B7021D58F4B93AB2FE252505E7 /* HYExecuter.m */,
+				E5B7DFF2AED4DD7246B97755401B6300 /* HYManager.h */,
+				ADFB535242983B0C04243ABD4D3B5154 /* HYManager.m */,
+				2880ED1A3E4AB25BBA14806C8F617991 /* HYMigrator.h */,
+				0692569E93C7D3D382EDD16F54BEDD0C /* HYMigrator.m */,
+				44ED8034DBF1F7C25AFD74062A7EE817 /* HYQuery.h */,
+				00E60A6B58F0206484F1709EA24277A3 /* HYQuery.m */,
+				FD4CCF3B3616622EB0DC270697384248 /* HYResult.h */,
+				B2F54943B449BA82756EBE6339250328 /* HYResult.m */,
+				50B089A680A2F2D5E9439C0E3F5D8D5A /* HYTrackingResultSet.h */,
+				99D100C49068E218C8EA57A8215673D0 /* HYTrackingResultSet.m */,
+				388EA0E202BE2A6DEF70A23D0FB7DAA0 /* HYWorker.h */,
+				BB8554CBEAE75D9AA3813115B2E94420 /* HYWorker.m */,
+				9D7A5D3A7CD9E4D381049B1F974F4F71 /* Support Files */,
+			);
+			name = Hydra;
+			path = Hydra;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1537ACF362FF91A523909B173D66828 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				529ED070A18145040234317E546BF06A /* Pods-Monzo AR */,
+				A9A0FA4083640843DA4336CD622B36C9 /* Pods-Monzo ARTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		50AAA0138E6B8FC868508A48ACD880A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B8EFB8478330CFA4993213E5A820BD /* Pods-Monzo ARTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE436A0A10B5C5D913F915580D498F14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7781756F1A6499A6ACC5A8BBA66B97AB /* HYAsyncTask.h in Headers */,
+				B0382937633201BA727354322815DBED /* HYDefine.h in Headers */,
+				5B7DC052EC85968351DAA26EB948805D /* Hydra-umbrella.h in Headers */,
+				395F82B87B5E5C1A9952943CCF5F754C /* Hydra.h in Headers */,
+				44F5731BA035DCB29E3372F7E41F5D9B /* HYExecuter.h in Headers */,
+				4E64551019BB7872C27CD0C4E2AA296A /* HYManager.h in Headers */,
+				AA1376C418CAF305A1ADC4D17D7E7FAA /* HYMigrator.h in Headers */,
+				A7513E65C3A638BF36E5D9E7EEDD18E0 /* HYQuery.h in Headers */,
+				BD1835EBF401DBC5FFF2F92ED0417CB4 /* HYResult.h in Headers */,
+				25D67CE4445A21B7CAF0CC5BE1C81A41 /* HYTrackingResultSet.h in Headers */,
+				03441B28AE600CB118A18B605C5041A7 /* HYWorker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9515C83B5B3E54649E9F51C391F0EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4E4F71A9E4B465F2550766EBEB8D65 /* Pods-Monzo AR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		688368F0BE9086BC670F1B8DCF13BE18 /* Pods-Monzo ARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AFE370B88E83998AE5ACFE51B9AFF43 /* Build configuration list for PBXNativeTarget "Pods-Monzo ARTests" */;
+			buildPhases = (
+				0B02E0F987EF16E2A1A657D302673FA7 /* Sources */,
+				AA09CB1465EE77BC32FF9034211BCF70 /* Frameworks */,
+				50AAA0138E6B8FC868508A48ACD880A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Monzo ARTests";
+			productName = "Pods-Monzo ARTests";
+			productReference = 708CCD9B060504D8AB8E349632F2717F /* Pods_Monzo_ARTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73C0A8CED3E5F55B4EAAD108E4046A6F /* Hydra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81639EA0F4A657B540C135C2B81E5049 /* Build configuration list for PBXNativeTarget "Hydra" */;
+			buildPhases = (
+				952A2EFCB12B0959599AE3B9A0E32ADC /* Sources */,
+				D1C0FFCDA21E6EF1094B9890597EEE35 /* Frameworks */,
+				AE436A0A10B5C5D913F915580D498F14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hydra;
+			productName = Hydra;
+			productReference = 482A7155FA307A4C023BFB98DF866AD1 /* Hydra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE097B9EA4B918006E13A082630015DC /* Pods-Monzo AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EF9276A7DCE16DC746076F1E86A30B /* Build configuration list for PBXNativeTarget "Pods-Monzo AR" */;
+			buildPhases = (
+				63D109C57D4C2C883941820613053FA5 /* Sources */,
+				16427B8B255681ABB467472B83C1667F /* Frameworks */,
+				BF9515C83B5B3E54649E9F51C391F0EA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98A9515BD9E2619331D7093FDB9EAA45 /* PBXTargetDependency */,
+			);
+			name = "Pods-Monzo AR";
+			productName = "Pods-Monzo AR";
+			productReference = BAA45B2C959757EE2C721BB965540DAC /* Pods_Monzo_AR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6904684F03C3E045078B7723AFAC3A8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73C0A8CED3E5F55B4EAAD108E4046A6F /* Hydra */,
+				AE097B9EA4B918006E13A082630015DC /* Pods-Monzo AR */,
+				688368F0BE9086BC670F1B8DCF13BE18 /* Pods-Monzo ARTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B02E0F987EF16E2A1A657D302673FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAC7C17C3128FED0037EF82300892E8 /* Pods-Monzo ARTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D109C57D4C2C883941820613053FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF849F9991BC17C872957C0DFD096696 /* Pods-Monzo AR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A2EFCB12B0959599AE3B9A0E32ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E8264B2C8001593B7FC3828F5F9C819 /* HYAsyncTask.m in Sources */,
+				8E6A1BCAD943FA8FD54F67CC74A61E9B /* Hydra-dummy.m in Sources */,
+				08A8D77AAD585CED65AA15730990F5D3 /* Hydra.m in Sources */,
+				50A66ECA9A504799CA0EAFB075CCC219 /* HYExecuter.m in Sources */,
+				2DFC5868056C7264D4B5EEEADF6D6489 /* HYManager.m in Sources */,
+				2F850C4E8EC2AE15EC3699D9EB75FF78 /* HYMigrator.m in Sources */,
+				CEF2619F7558C3E6DC75C6050EB8FAD1 /* HYQuery.m in Sources */,
+				DE04C70F6AB6DFD11A8BECFA48806F41 /* HYResult.m in Sources */,
+				D655C54790B8D5B3F0C9F80746DBF15C /* HYTrackingResultSet.m in Sources */,
+				764C9FD159E9734AAA68085332C00EB3 /* HYWorker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98A9515BD9E2619331D7093FDB9EAA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hydra;
+			target = 73C0A8CED3E5F55B4EAAD108E4046A6F /* Hydra */;
+			targetProxy = A93CEAD7B9083EE4A70D17F52969EDEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1423269A40C68DB9BD5E0485FE7130BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48E9A3355CBED0784CC256062017268 /* Hydra.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Hydra/Hydra-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hydra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hydra/Hydra.modulemap";
+				PRODUCT_NAME = Hydra;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4E89B90D471E58D3B016E51BF67560DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E23A241D9D014A5A4E8AE1158F4FFE4 /* Pods-Monzo ARTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Monzo ARTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Monzo_ARTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70F3716B654980E3360BA0BD8ADFD583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782DD51011FC7F0C8EE0D4BD4D4A368 /* Pods-Monzo AR.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Monzo AR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monzo AR/Pods-Monzo AR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Monzo_AR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A44692C54181255916829AB7C1503ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48E9A3355CBED0784CC256062017268 /* Hydra.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Hydra/Hydra-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hydra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hydra/Hydra.modulemap";
+				PRODUCT_NAME = Hydra;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6DB1C2F716EF78F5D11FBEC777A59DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61617DE953119E19941BD2D8E71E3AC8 /* Pods-Monzo AR.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Monzo AR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monzo AR/Pods-Monzo AR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Monzo_AR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBD48CAC5DA9DA58013DE57B24F5DB0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30410F184C44C06ADDB819F6E64148FF /* Pods-Monzo ARTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Monzo ARTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Monzo_ARTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21EF9276A7DCE16DC746076F1E86A30B /* Build configuration list for PBXNativeTarget "Pods-Monzo AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DB1C2F716EF78F5D11FBEC777A59DB /* Debug */,
+				70F3716B654980E3360BA0BD8ADFD583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AFE370B88E83998AE5ACFE51B9AFF43 /* Build configuration list for PBXNativeTarget "Pods-Monzo ARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD48CAC5DA9DA58013DE57B24F5DB0B /* Debug */,
+				4E89B90D471E58D3B016E51BF67560DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81639EA0F4A657B540C135C2B81E5049 /* Build configuration list for PBXNativeTarget "Hydra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1423269A40C68DB9BD5E0485FE7130BA /* Debug */,
+				A44692C54181255916829AB7C1503ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
