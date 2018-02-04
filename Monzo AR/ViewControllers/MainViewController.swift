@@ -41,18 +41,20 @@ class MainViewController: UIViewController {
         let coin = SCNCylinder(radius: 0.01, height: 0.001)
         let coinNode = SCNNode()
         let coinMaterial = SCNMaterial()
+        let collisionCapsuleRadius = CGFloat(0.4 - 0.4) * 0.4
+        let collisionCapsuleHeight = CGFloat(0.4 - 0.4)
         
-        coinMaterial.diffuse.contents = .yellow
+        coinMaterial.diffuse.contents = UIColor.yellow
         
         coinNode.geometry = coin
         coinNode.position = SCNVector3(0, 0, 10)
         
-        coinNode.physicsBody = SCNPhysicsBody(type: .Dynamic,
+        coinNode.physicsBody = SCNPhysicsBody(type: .dynamic,
                                               shape: SCNPhysicsShape(geometry: SCNCapsule(capRadius: collisionCapsuleRadius,
                                                                                           height: collisionCapsuleHeight),
                                                                      options:nil))
-        coinNode.physicsBody.affectedByGravity = true
-        coinNode.physicsBody.friction = 0
+        coinNode.physicsBody!.isAffectedByGravity = true
+        coinNode.physicsBody!.friction = 0
         
         sceneView.scene.rootNode.addChildNode(coinNode)
     }
@@ -62,11 +64,10 @@ class MainViewController: UIViewController {
         let noteNode = SCNNode()
         let coinMaterial = SCNMaterial()
         
-        coinMaterial.diffuse.contents = .green
+        coinMaterial.diffuse.contents = UIColor.green
         
         noteNode.geometry = note
         noteNode.position = SCNVector3(0, 0, 10)
-        noteNode.physicsWorld = SCNVector3Make(0, -4.9, 0)
         
         sceneView.scene.rootNode.addChildNode(noteNode)
     }
