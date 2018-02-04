@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143B201F317600D92AFD /* AppDelegate.swift */; };
-		71BD143E201F317600D92AFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143D201F317600D92AFD /* LoginViewController.swift */; };
+		71BD143E201F317600D92AFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143D201F317600D92AFD /* MainViewController.swift */; };
 		71BD1443201F317600D92AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1442201F317600D92AFD /* Assets.xcassets */; };
 		71BD1446201F317600D92AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1444201F317600D92AFD /* LaunchScreen.storyboard */; };
 		71BD1451201F317700D92AFD /* Monzo_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD1450201F317700D92AFD /* Monzo_ARTests.swift */; };
@@ -16,6 +16,7 @@
 		79B907D7C1F7F7AB957EEC16 /* Pods_Monzo_AR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC651F44DCD64445D75585B /* Pods_Monzo_AR.framework */; };
 		7AC5C147687CA327010D1862 /* Pods_Monzo_ARTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF95AC1D1B8407877D3680 /* Pods_Monzo_ARTests.framework */; };
 		87DC0B2020270AA60035566E /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC0B1F20270AA60035566E /* UIView+AutoLayout.swift */; };
+		87DC0B2420275FB00035566E /* Float4x4+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC0B2320275FB00035566E /* Float4x4+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,7 @@
 		2DFF08F7D1A97A70B5B8D583 /* Pods-Monzo ARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo ARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.release.xcconfig"; sourceTree = "<group>"; };
 		71BD1438201F317600D92AFD /* Monzo AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monzo AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD143B201F317600D92AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71BD143D201F317600D92AFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		71BD143D201F317600D92AFD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		71BD1442201F317600D92AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BD1445201F317600D92AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71BD1447201F317600D92AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		71EC61FE2020D0CE00CF5F46 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		77563C86A6366E8BB68CBD53 /* Pods-Monzo AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR.debug.xcconfig"; sourceTree = "<group>"; };
 		87DC0B1F20270AA60035566E /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		87DC0B2320275FB00035566E /* Float4x4+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float4x4+Extension.swift"; sourceTree = "<group>"; };
 		9F597CD31ED9E1516E5FC08C /* Pods-Monzo ARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo ARTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B263E4341FB4264D61AF4367 /* Pods-Monzo AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR.release.xcconfig"; sourceTree = "<group>"; };
 		DABF95AC1D1B8407877D3680 /* Pods_Monzo_ARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monzo_ARTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 		71BD143A201F317600D92AFD /* Monzo AR */ = {
 			isa = PBXGroup;
 			children = (
+				87DC0B252027601C0035566E /* Views */,
 				87DC0B1E20270A800035566E /* Helpers */,
 				71EC62002020D1D300CF5F46 /* Networking */,
 				87DC0B2120270B030035566E /* SupportingFiles */,
@@ -140,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				87DC0B1F20270AA60035566E /* UIView+AutoLayout.swift */,
+				87DC0B2320275FB00035566E /* Float4x4+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -158,9 +162,16 @@
 		87DC0B2220270B130035566E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				71BD143D201F317600D92AFD /* LoginViewController.swift */,
+				71BD143D201F317600D92AFD /* MainViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		87DC0B252027601C0035566E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,10 +348,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Monzo AR/Pods-Monzo AR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Hydra/Hydra.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BD143E201F317600D92AFD /* LoginViewController.swift in Sources */,
+				87DC0B2420275FB00035566E /* Float4x4+Extension.swift in Sources */,
+				71BD143E201F317600D92AFD /* MainViewController.swift in Sources */,
 				87DC0B2020270AA60035566E /* UIView+AutoLayout.swift in Sources */,
 				71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */,
 				71EC61FF2020D0CE00CF5F46 /* NetworkingManager.swift in Sources */,
@@ -523,7 +537,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Monzo AR/Info.plist";
+				DEVELOPMENT_TEAM = L3QZJU3LP7;
+				INFOPLIST_FILE = "Monzo AR/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,7 +553,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Monzo AR/Info.plist";
+				DEVELOPMENT_TEAM = L3QZJU3LP7;
+				INFOPLIST_FILE = "Monzo AR/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";

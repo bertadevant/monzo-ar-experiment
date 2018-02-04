@@ -7,6 +7,7 @@ target 'Monzo AR' do
 
   # Pods for Monzo AR
   pod 'Hydra'
+  pod 'Alamofire', '~> 4.5'
 
   target 'Monzo ARTests' do
     inherit! :search_paths
