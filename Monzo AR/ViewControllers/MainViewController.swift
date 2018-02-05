@@ -42,15 +42,32 @@ class MainViewController: UIViewController {
     }
     
     func addGrowingSquare() {
-        let box:SCNBox = SCNBox(width: 0.1, height: 0.0, length: 0.1, chamferRadius: 0)
+        let text = "Beer £10.50"
+        let textScene = SCNText(string: text, extrusionDepth: 2)
+        let material = SCNMaterial()
+        let textNode = SCNNode(geometry: textScene)
+        let (minVec, maxVec) = textNode.boundingBox
+        let xVectorScale: Float = 0.01
+        let centerX = Float(minVec.x - maxVec.x)/2.0 * xVectorScale
+        let textVector = SCNVector3(x: centerX, y: -1.0, z: -2.5)
+        
+        textNode.position = textVector
+        material.diffuse.contents = UIColor.green
+        textScene.materials = [material]
+        textNode.scale = SCNVector3(x: xVectorScale, y: 0.01, z: 0.01)
+        sceneView.scene.rootNode.addChildNode(textNode)
+        
+        let box = SCNBox(width: 0.1, height: 0.0, length: 0.1, chamferRadius: 0)
+        let boxNode = SCNNode(geometry: box)
         box.firstMaterial?.diffuse.contents = UIColor.green
-        let boxNode:SCNNode = SCNNode(geometry: box)
         boxNode.position = SCNVector3(x: 0, y: -1.0, z: -2.5)
         sceneView.scene.rootNode.addChildNode(boxNode)
         boxNode.pivot = SCNMatrix4MakeTranslation(0, Float(-(box.height/2)), 0)
+        
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 10.0
         box.height = 1
+        textNode.position = SCNVector3(x: centerX, y: 0.0, z: -2.5)
         boxNode.pivot = SCNMatrix4MakeTranslation(0, Float(-(box.height/2)), 0) // new height
         SCNTransaction.commit()
     }
