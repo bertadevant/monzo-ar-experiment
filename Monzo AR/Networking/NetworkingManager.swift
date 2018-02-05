@@ -11,22 +11,14 @@ import Alamofire
 class NetworkManager {
     
     private let clientID = "oauthclient_00009THxqI5SMFK6JudM9J"
-    private let baseURL = "https://auth.monzo.com/"
-    private let redirectURI = "https://Monzo-AR.novoda.com"
+    private let baseURL = "https://auth.getmondo.co.uk/?"
+    private let redirectURI = "https://www.novoda.com"
     private let responseType = "code"
     private let stateToken = "random string"
     private var requestURL: String!
     
     init() {
-        requestURL = baseURL +
-            "?client_id=" +
-            clientID +
-            "&redirect_uri=" +
-            redirectURI +
-            "&response_type=" +
-            responseType +
-            "&state=" +
-        stateToken
+        requestURL = "https://auth.monzo.com/?client_id=oauthclient_00009THxqI5SMFK6JudM9J&redirect_uri=https://www.novoda.com&response_type=code&state=state"
     }
     
     func request() {
