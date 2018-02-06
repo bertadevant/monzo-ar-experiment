@@ -44,10 +44,20 @@ class MainViewController: UIViewController {
         sceneView.debugOptions = []
     }
     
+    private func convertAmount(_ amount: Double) -> Double {
+        var newAmount = amount
+        if newAmount < 0 {
+            newAmount = newAmount * -1
+        }
+        
+        return newAmount/100
+    }
+    
     private func createChart(from data: ResponseData) {
         var xPosition: Float = 0
         data.transactions.forEach { transaction in
-            let text = String("\(transaction.description)\n \(transaction.amount)")
+            let amountInPounds = convertAmount(transaction.amount)
+            let text = String("\(transaction.description)\n £\(amountInPounds)")
             let textScene = createTextScene(text)
             let textNode = createTextNode(with: textScene, xPosition: xPosition)
 //            let textCenter = getTextCenter(from: textScene)
@@ -62,6 +72,7 @@ class MainViewController: UIViewController {
             moveNodesUP(textCenter: xPosition,
                         textNode: textNode,
                         bar: bar,
+                        barHeight: CGFloat(amountInPounds),
                         barNode: barNode)
             xPosition += 0.5
         }
@@ -78,7 +89,7 @@ class MainViewController: UIViewController {
     
     private func createTextNode(with textScene: SCNText, xPosition: Float) -> SCNNode {
         let textNode = SCNNode(geometry: textScene)
-        let centerX = getTextCenter(from: textScene)
+        //let centerX = getTextCenter(from: textScene)
         let textVector = SCNVector3(x: xPosition, y: -1.0, z: -2.5)
         let xVectorScale: Float = 0.01
         
@@ -107,11 +118,14 @@ class MainViewController: UIViewController {
     func moveNodesUP(textCenter: Float,
                      textNode: SCNNode,
                      bar: SCNBox,
+                     barHeight: CGFloat,
                      barNode: SCNNode) {
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 10.0
-        bar.height = 1
-        textNode.position = SCNVector3(x: textCenter, y: 0.0, z: -2.5)
+        bar.height = barHeight
+        textNode.position = SCNVector3(x: textCenter,
+                                       y: Float(-1.0 + barHeight),
+                                       z: -2.5)
         barNode.pivot = SCNMatrix4MakeTranslation(0, Float(-(bar.height/2)), 0)
         SCNTransaction.commit()
     }
