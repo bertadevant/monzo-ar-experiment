@@ -2,13 +2,37 @@
    "transactions":[
       {
          "amount":-510,
-         "description":"Wine",
+         "description":"Red Wine",
          "notes":"Salmon sandwich 🍞",
          "category":"eating_out"
       },
       {
-         "amount":-679,
+         "amount":-279,
          "description":"Cheese",
+         "notes":"",
+         "category":"eating_out"
+      },
+      {
+         "amount":-110,
+         "description":"Bread",
+         "notes":"Salmon sandwich 🍞",
+         "category":"eating_out"
+      },
+      {
+         "amount":-79,
+         "description":"Chutney",
+         "notes":"",
+         "category":"eating_out"
+      },
+      {
+         "amount":-310,
+         "description":"Steak",
+         "notes":"Salmon sandwich 🍞",
+         "category":"eating_out"
+      },
+      {
+         "amount":-479,
+         "description":"White Wine",
          "notes":"",
          "category":"eating_out"
       }
