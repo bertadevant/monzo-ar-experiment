@@ -16,20 +16,17 @@ class MainViewController: UIViewController {
     private let dataFactory = DataFactory()
     private let fileName = "Response"
     private var planes = [UUID: VirtualPlane]()
-    private var responseData: ResponseData? {
-        didSet {
-            createChart(from: responseData!)
-        }
-    }
+    private var responseData: ResponseData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        responseData = dataFactory.parseJSON(fileName: fileName)
-        
         setupHierarchy()
         setupViews()
         setupLayout()
+        
+        responseData = dataFactory.parseJSON(fileName: fileName)
+        createChart(from: responseData!)
     }
     
     private func setupHierarchy() {
