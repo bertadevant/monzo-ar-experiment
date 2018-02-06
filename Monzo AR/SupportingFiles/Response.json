@@ -2,13 +2,13 @@
    "transactions":[
       {
          "amount":-510,
-         "description":"THE DE BEAUVOIR DELI C LONDON        GBR",
+         "description":"Wine",
          "notes":"Salmon sandwich 🍞",
          "category":"eating_out"
       },
       {
          "amount":-679,
-         "description":"VUE BSL LTD            ISLINGTON     GBR",
+         "description":"Cheese",
          "notes":"",
          "category":"eating_out"
       }

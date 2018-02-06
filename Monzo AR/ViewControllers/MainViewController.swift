@@ -45,23 +45,25 @@ class MainViewController: UIViewController {
     }
     
     private func createChart(from data: ResponseData) {
+        var xPosition: Float = 0
         data.transactions.forEach { transaction in
             let text = String("\(transaction.description)\n \(transaction.amount)")
             let textScene = createTextScene(text)
-            let textNode = createTextNode(with: textScene)
-            let textCenter = getTextCenter(from: textScene)
+            let textNode = createTextNode(with: textScene, xPosition: xPosition)
+//            let textCenter = getTextCenter(from: textScene)
             
             sceneView.scene.rootNode.addChildNode(textNode)
             
             let bar = SCNBox(width: 0.15, height: 0.0, length: 0.15, chamferRadius: 0)
-            let barNode = createBarNode(with: bar)
+            let barNode = createBarNode(with: bar, barXPosition: xPosition)
             
             sceneView.scene.rootNode.addChildNode(barNode)
             
-            moveNodesUP(textCenter: textCenter,
+            moveNodesUP(textCenter: xPosition,
                         textNode: textNode,
                         bar: bar,
                         barNode: barNode)
+            xPosition += 0.5
         }
     }
     
@@ -74,10 +76,10 @@ class MainViewController: UIViewController {
         return textScene
     }
     
-    private func createTextNode(with textScene: SCNText) -> SCNNode {
+    private func createTextNode(with textScene: SCNText, xPosition: Float) -> SCNNode {
         let textNode = SCNNode(geometry: textScene)
         let centerX = getTextCenter(from: textScene)
-        let textVector = SCNVector3(x: centerX, y: -1.0, z: -2.5)
+        let textVector = SCNVector3(x: xPosition, y: -1.0, z: -2.5)
         let xVectorScale: Float = 0.01
         
         textNode.position = textVector
@@ -93,11 +95,11 @@ class MainViewController: UIViewController {
         return Float(minVec.x - maxVec.x)/2.0 * xVectorScale
     }
     
-    func createBarNode(with bar: SCNBox) -> SCNNode {
+    func createBarNode(with bar: SCNBox, barXPosition: Float) -> SCNNode {
         let barNode = SCNNode(geometry: bar)
         bar.firstMaterial?.diffuse.contents = UIColor.green
-        barNode.position = SCNVector3(x: 0, y: -1.0, z: -2.5)
-        barNode.pivot = SCNMatrix4MakeTranslation(0, Float(-(bar.height/2)), 0)
+        barNode.position = SCNVector3(x: barXPosition, y: -1.0, z: -2.5)
+        
         
         return barNode
     }
