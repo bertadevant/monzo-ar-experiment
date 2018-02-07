@@ -51,8 +51,7 @@ class MainViewController: UIViewController {
         
         let configuration = ARWorldTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
-        //if you set the plane it calls the rendered as it follows the plane which would move the objects
-//        configuration.planeDetection = .horizontal
+        configuration.planeDetection = .horizontal
 
         sceneView.session.run(configuration)
     }
@@ -81,27 +80,33 @@ class MainViewController: UIViewController {
             sceneView.hitTest(location, types: [.estimatedHorizontalPlane, .featurePoint, .existingPlane])
 
         if let hit = hitResultsFeaturePoints.first {
-            let anchor = ARAnchor(transform: hit.worldTransform)
-            sceneView.session.add(anchor: anchor)
+            let anchorPosition = hit.worldTransform.translation
+            guard let graphNode = createGraphToAddToScene(chartPosition: anchorPosition) else {
+                return
+            }
+            sceneView.scene.rootNode.addChildNode(graphNode)
         }
+    }
+
+    private func createGraphToAddToScene(chartPosition: float3) -> SCNNode? {
+        guard let transactions = self.responseData?.transactions else {
+            return nil
+        }
+        let graph = ARChartGraphNode()
+        graph.createChartGraph(at: chartPosition, with: transactions)
+        graph.name = "Graph"
+        let positionForCenter = chartPosition.x - (getWidthOfNode(graph) / 2) 
+        graph.position = SCNVector3(positionForCenter, chartPosition.y, chartPosition.z)
+        return graph
+    }
+
+    private func getWidthOfNode(_ node: SCNNode) -> Float {
+        let minX = node.boundingBox.min.x
+        let maxX = node.boundingBox.max.x
+        return maxX - minX
     }
 }
 
 extension MainViewController: ARSCNViewDelegate {
-
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-         if !anchor.isKind(of: ARPlaneAnchor.self) {
-            guard let transactions = self.responseData?.transactions else {
-                return nil
-            }
-            let chartPosition = anchor.transform.translation
-            let graph = ARChartGraphNode()
-            graph.createChartGraph(at: chartPosition, with: transactions)
-            graph.name = "Graph"
-            return graph
-        }
-        return nil
-    }
-
 
 }
