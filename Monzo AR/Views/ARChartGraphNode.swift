@@ -17,27 +17,50 @@ class ARChartGraphNode: SCNNode {
         transactions.forEach { transaction in
             let chartBar = ARChartBarNode()
             let position = float3(xPosition, location.y, location.z)
-            chartBar.configureNode(for: transaction, in: position, colour: UIColor.random())
+            let colour = UIColor.randomMonzoColor()
+            chartBar.configureNode(for: transaction, in: position, colour: colour)
             addChildNode(chartBar)
             xPosition += 0.25
         }
     }
 
-
+    //    func addCoin() {
+    //        let coin = SCNCylinder(radius: 0.1, height: 0.002)
+    //        let coinNode = SCNNode(geometry: coin)
+    //        let coinMaterial = SCNMaterial()
+    //
+    //        coinMaterial.diffuse.contents = UIColor.yellow
+    //        coin.materials = [coinMaterial]
+    //        coinNode.position = SCNVector3(0, 1, -3.5)
+    //
+    //        coinNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+    //        coinNode.physicsBody!.isAffectedByGravity = true
+    //        coinNode.physicsBody!.friction = 0
+    //
+    //        sceneView.scene.rootNode.addChildNode(coinNode)
+    //    }
+    //
+    //    func addNote() {
+    //        let note = SCNBox(width: 0.04, height: 0.0001, length: 0.1, chamferRadius: 0)
+    //        let noteNode = SCNNode()
+    //        let coinMaterial = SCNMaterial()
+    //
+    //        coinMaterial.diffuse.contents = UIColor.green
+    //
+    //        noteNode.geometry = note
+    //        noteNode.position = SCNVector3(0, 0, -0.3)
+    //
+    //        sceneView.scene.rootNode.addChildNode(noteNode)
+    //    }
 
 }
 
-fileprivate extension CGFloat {
-    static func random() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-    }
-}
 fileprivate extension UIColor {
-    static func random() -> UIColor {
-        return UIColor(red:   .random(),
-                       green: .random(),
-                       blue:  .random(),
-                       alpha: 1.0)
+    static func randomMonzoColor() -> UIColor {
+        let randomIndex = Int(arc4random_uniform(11))
+        guard randomIndex < 11 && randomIndex >= 0 else {
+            return UIColor.clear
+        }
+        return monzoBrandColourArray[randomIndex]
     }
 }
-

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA054F1202B508100984197 /* MonzoBrandColours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA054F0202B508100984197 /* MonzoBrandColours.swift */; };
 		4CA2D117202B1C67009F4A43 /* ARChartBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2D116202B1C67009F4A43 /* ARChartBarNode.swift */; };
 		4CA2D119202B2461009F4A43 /* ARChartGraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2D118202B2461009F4A43 /* ARChartGraphNode.swift */; };
 		71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143B201F317600D92AFD /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2DFF08F7D1A97A70B5B8D583 /* Pods-Monzo ARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo ARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.release.xcconfig"; sourceTree = "<group>"; };
+		4CA054F0202B508100984197 /* MonzoBrandColours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonzoBrandColours.swift; sourceTree = "<group>"; };
 		4CA2D116202B1C67009F4A43 /* ARChartBarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChartBarNode.swift; sourceTree = "<group>"; };
 		4CA2D118202B2461009F4A43 /* ARChartGraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChartGraphNode.swift; sourceTree = "<group>"; };
 		71BD1438201F317600D92AFD /* Monzo AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monzo AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 				71BD1444201F317600D92AFD /* LaunchScreen.storyboard */,
 				71BD1447201F317600D92AFD /* Info.plist */,
 				879D6365202A1BD10081B515 /* Response.json */,
+				4CA054F0202B508100984197 /* MonzoBrandColours.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				4CA2D119202B2461009F4A43 /* ARChartGraphNode.swift in Sources */,
 				71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */,
 				879D636D202A21D30081B515 /* ResponseData.swift in Sources */,
+				4CA054F1202B508100984197 /* MonzoBrandColours.swift in Sources */,
 				71EC61FF2020D0CE00CF5F46 /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
