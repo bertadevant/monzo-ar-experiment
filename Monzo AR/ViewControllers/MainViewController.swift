@@ -68,6 +68,10 @@ class MainViewController: UIViewController {
             print("there was a problem with response data or location")
             return
         }
+        if let nodeExists = sceneView.scene.rootNode.childNode(withName: "Graph", recursively: true) {
+            nodeExists.removeFromParentNode()
+        }
+
         addNodeToSessionUsingFeaturePoints(location: location)
     }
 
@@ -93,6 +97,7 @@ extension MainViewController: ARSCNViewDelegate {
             let chartPosition = anchor.transform.translation
             let graph = ARChartGraphNode()
             graph.createChartGraph(at: chartPosition, with: transactions)
+            graph.name = "Graph"
             return graph
         }
         return nil

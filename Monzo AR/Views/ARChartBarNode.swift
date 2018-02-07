@@ -39,8 +39,6 @@ class ARChartBarNode: SCNNode {
         let secondRotation = SCNMatrix4MakeRotation(Float(Double.pi/2), 1, 0, 0)
         let totalRotation = SCNMatrix4Mult(firstRotation, secondRotation)
         textNode.pivot = totalRotation
-//        textNode.pivot = SCNMatrix4MakeRotation(Float(Double.pi/2), 0, 0, 1)
-//        textNode.position = getZForward(node: textNode)
         addChildNode(textNode)
     }
 
