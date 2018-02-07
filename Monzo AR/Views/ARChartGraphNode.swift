@@ -14,7 +14,8 @@ class ARChartGraphNode: SCNNode {
     func createChartGraph(at location: float3, with transactions: [Transaction]) {
 
         var xPosition: Float = 0
-        transactions.forEach { transaction in
+        let sorted = transactions.sorted{ $0.amount > $1.amount }
+        sorted.forEach { transaction in
             let chartBar = ARChartBarNode()
             let position = float3(xPosition, location.y, location.z)
             chartBar.configureNode(for: transaction, in: position, colour: UIColor.getRandomMonzoColour())
