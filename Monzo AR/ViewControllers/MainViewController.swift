@@ -77,7 +77,7 @@ class MainViewController: UIViewController {
     private func addNodeToSessionUsingFeaturePoints(location: CGPoint) {
 
         let hitResultsFeaturePoints: [ARHitTestResult] =
-            sceneView.hitTest(location, types: [.estimatedHorizontalPlane, .featurePoint, .existingPlane])
+            sceneView.hitTest(location, types: [.featurePoint, .existingPlane, .estimatedHorizontalPlane])
 
         if let hit = hitResultsFeaturePoints.first {
             let anchorPosition = hit.worldTransform.translation
@@ -95,7 +95,7 @@ class MainViewController: UIViewController {
         let graph = ARChartGraphNode()
         graph.createChartGraph(at: chartPosition, with: transactions)
         graph.name = "Graph"
-        let positionForCenter = chartPosition.x - (getWidthOfNode(graph) / 2) 
+        let positionForCenter = (getWidthOfNode(graph) / 2)
         graph.position = SCNVector3(positionForCenter, chartPosition.y, chartPosition.z)
         return graph
     }
