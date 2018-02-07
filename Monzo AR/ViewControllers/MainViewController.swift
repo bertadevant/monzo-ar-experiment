@@ -15,7 +15,6 @@ class MainViewController: UIViewController {
     private let sceneView = ARSCNView()
     private let dataFactory = DataFactory()
     private let fileName = "Response"
-//    private var planes = [UUID: VirtualPlane]()
     private var responseData: ResponseData?
     
     override func viewDidLoad() {

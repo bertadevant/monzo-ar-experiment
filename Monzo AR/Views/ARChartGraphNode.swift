@@ -14,13 +14,15 @@ class ARChartGraphNode: SCNNode {
     func createChartGraph(at location: float3, with transactions: [Transaction]) {
 
         var xPosition: Float = 0
+        var monzoColours = monzoBrandColourArray
         transactions.forEach { transaction in
             let chartBar = ARChartBarNode()
             let position = float3(xPosition, location.y, location.z)
-            let colour = UIColor.randomMonzoColor()
-            chartBar.configureNode(for: transaction, in: position, colour: colour)
+            let colourIndex = Int(arc4random_uniform(11))
+            chartBar.configureNode(for: transaction, in: position, colour: monzoColors[colourIndex])
             addChildNode(chartBar)
             xPosition += 0.25
+            monzoColours.remove(at: colourIndex)
         }
     }
 
@@ -53,14 +55,4 @@ class ARChartGraphNode: SCNNode {
     //        sceneView.scene.rootNode.addChildNode(noteNode)
     //    }
 
-}
-
-fileprivate extension UIColor {
-    static func randomMonzoColor() -> UIColor {
-        let randomIndex = Int(arc4random_uniform(11))
-        guard randomIndex < 11 && randomIndex >= 0 else {
-            return UIColor.clear
-        }
-        return monzoBrandColourArray[randomIndex]
-    }
 }
