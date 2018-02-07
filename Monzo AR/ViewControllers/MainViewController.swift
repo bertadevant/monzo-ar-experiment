@@ -51,8 +51,9 @@ class MainViewController: UIViewController {
         
         let configuration = ARWorldTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
-        configuration.planeDetection = .horizontal
-        
+        //if you set the plane it calls the rendered as it follows the plane which would move the objects
+//        configuration.planeDetection = .horizontal
+
         sceneView.session.run(configuration)
     }
     
