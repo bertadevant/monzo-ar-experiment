@@ -19,7 +19,7 @@ class ARChartGraphNode: SCNNode {
             let chartBar = ARChartBarNode()
             let position = float3(xPosition, location.y, location.z)
             let colourIndex = Int(arc4random_uniform(11))
-            chartBar.configureNode(for: transaction, in: position, colour: monzoColors[colourIndex])
+            chartBar.configureNode(for: transaction, in: position, colour: monzoColours[colourIndex])
             addChildNode(chartBar)
             xPosition += 0.25
             monzoColours.remove(at: colourIndex)
