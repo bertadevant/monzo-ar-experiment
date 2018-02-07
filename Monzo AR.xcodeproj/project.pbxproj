@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA2D117202B1C67009F4A43 /* ARChartBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2D116202B1C67009F4A43 /* ARChartBarNode.swift */; };
+		4CA2D119202B2461009F4A43 /* ARChartGraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2D118202B2461009F4A43 /* ARChartGraphNode.swift */; };
 		71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143B201F317600D92AFD /* AppDelegate.swift */; };
 		71BD143E201F317600D92AFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD143D201F317600D92AFD /* MainViewController.swift */; };
 		71BD1443201F317600D92AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BD1442201F317600D92AFD /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		2DFF08F7D1A97A70B5B8D583 /* Pods-Monzo ARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzo ARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monzo ARTests/Pods-Monzo ARTests.release.xcconfig"; sourceTree = "<group>"; };
+		4CA2D116202B1C67009F4A43 /* ARChartBarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChartBarNode.swift; sourceTree = "<group>"; };
+		4CA2D118202B2461009F4A43 /* ARChartGraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChartGraphNode.swift; sourceTree = "<group>"; };
 		71BD1438201F317600D92AFD /* Monzo AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monzo AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD143B201F317600D92AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71BD143D201F317600D92AFD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4CA2D115202B1C5A009F4A43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CA2D116202B1C67009F4A43 /* ARChartBarNode.swift */,
+				4CA2D118202B2461009F4A43 /* ARChartGraphNode.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		71BD142F201F317600D92AFD = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +123,8 @@
 		71BD143A201F317600D92AFD /* Monzo AR */ = {
 			isa = PBXGroup;
 			children = (
+				4CA2D115202B1C5A009F4A43 /* Views */,
 				879D636A202A21BD0081B515 /* Models */,
-				87DC0B252027601C0035566E /* Views */,
 				87DC0B1E20270A800035566E /* Helpers */,
 				71EC62002020D1D300CF5F46 /* Networking */,
 				87DC0B2120270B030035566E /* SupportingFiles */,
@@ -185,13 +198,6 @@
 				71BD143D201F317600D92AFD /* MainViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		87DC0B252027601C0035566E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,11 +413,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA2D117202B1C67009F4A43 /* ARChartBarNode.swift in Sources */,
 				87DC0B2420275FB00035566E /* Float4x4+Extension.swift in Sources */,
 				71BD143E201F317600D92AFD /* MainViewController.swift in Sources */,
 				87DC0B2020270AA60035566E /* UIView+AutoLayout.swift in Sources */,
 				879D6369202A21860081B515 /* DataFactory.swift in Sources */,
 				879D636320291A380081B515 /* VirtualPlane.swift in Sources */,
+				4CA2D119202B2461009F4A43 /* ARChartGraphNode.swift in Sources */,
 				71BD143C201F317600D92AFD /* AppDelegate.swift in Sources */,
 				879D636D202A21D30081B515 /* ResponseData.swift in Sources */,
 				71EC61FF2020D0CE00CF5F46 /* NetworkingManager.swift in Sources */,
@@ -561,11 +569,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3QZJU3LP7;
+				DEVELOPMENT_TEAM = V994K8B55B;
 				INFOPLIST_FILE = "Monzo AR/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-AR";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bertadevant.Monzo-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,11 +586,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3QZJU3LP7;
+				DEVELOPMENT_TEAM = V994K8B55B;
 				INFOPLIST_FILE = "Monzo AR/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.novoda.Monzo-AR";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bertadevant.Monzo-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

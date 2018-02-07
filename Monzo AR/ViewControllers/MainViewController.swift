@@ -26,7 +26,6 @@ class MainViewController: UIViewController {
         setupLayout()
         
         responseData = dataFactory.parseJSON(fileName: fileName)
-        createChart(from: responseData!)
     }
     
     private func setupHierarchy() {
@@ -41,64 +40,67 @@ class MainViewController: UIViewController {
         sceneView.showsStatistics = false
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
-        sceneView.debugOptions = []
+        sceneView.debugOptions = [ ARSCNDebugOptions.showWorldOrigin]
     }
     
-    private func convertAmount(_ amount: Double) -> Double {
-        var newAmount = amount
-        if newAmount < 0 {
-            newAmount = newAmount * -1
-        }
-        
-        return newAmount/100
-    }
-    
+//    private func convertAmount(_ amount: Double) -> Double {
+//        var newAmount = amount
+//        if newAmount < 0 {
+//            newAmount = newAmount * -1
+//        }
+//
+//        return newAmount/100
+//    }
+
     private func createChart(from data: ResponseData) {
         var xPosition: Float = 0
         data.transactions.forEach { transaction in
-            let amountInPounds = convertAmount(transaction.amount)
-            let text = String("\(transaction.description)\n £\(amountInPounds)")
-            let textScene = createTextScene(text)
-            let textNode = createTextNode(with: textScene, xPosition: xPosition)
+//            let amountInPounds = convertAmount(transaction.amount)
+//            let text = String("\(transaction.description)\n £\(amountInPounds)")
+
+
+//
+//            let textScene = createTextScene(text)
+//            let textNode = createTextNode(with: textScene, xPosition: xPosition)
 //            let textCenter = getTextCenter(from: textScene)
             
-            sceneView.scene.rootNode.addChildNode(textNode)
-            
-            let bar = SCNBox(width: 0.15, height: 0.0, length: 0.15, chamferRadius: 0)
-            let barNode = createBarNode(with: bar, barXPosition: xPosition)
-            
-            sceneView.scene.rootNode.addChildNode(barNode)
-            
-            moveNodesUP(textCenter: xPosition,
-                        textNode: textNode,
-                        bar: bar,
-                        barHeight: CGFloat(amountInPounds),
-                        barNode: barNode)
-            xPosition += 0.5
+//            sceneView.scene.rootNode.addChildNode(textNode)
+
+//            let bar = SCNBox(width: 0.15, height: 0.0, length: 0.15, chamferRadius: 0)
+//            let barNode = createBarNode(with: bar, barXPosition: xPosition)
+
+//            sceneView.scene.rootNode.addChildNode(barNode)
+
+//            moveNodesUP(textCenter: xPosition,
+//                        textNode: textNode,
+//                        bar: bar,
+//                        barHeight: CGFloat(amountInPounds),
+//                        barNode: barNode)
+//            xPosition += 0.5
         }
     }
     
-    private func createTextScene(_ text: String) -> SCNText {
-        let textScene = SCNText(string: text, extrusionDepth: 2)
-        let material = SCNMaterial()
-        material.diffuse.contents = UIColor.green
-        textScene.materials = [material]
-        
-        return textScene
-    }
-    
-    private func createTextNode(with textScene: SCNText, xPosition: Float) -> SCNNode {
-        let textNode = SCNNode(geometry: textScene)
-        //let centerX = getTextCenter(from: textScene)
-        let textVector = SCNVector3(x: xPosition, y: -1.0, z: -2.5)
-        let xVectorScale: Float = 0.01
-        
-        textNode.position = textVector
-        textNode.scale = SCNVector3(x: xVectorScale, y: 0.01, z: 0.01)
-        
-        return textNode
-    }
-    
+//    private func createTextScene(_ text: String) -> SCNText {
+//        let textScene = SCNText(string: text, extrusionDepth: 2)
+//        let material = SCNMaterial()
+//        material.diffuse.contents = UIColor.green
+//        textScene.materials = [material]
+//
+//        return textScene
+//    }
+
+//    private func createTextNode(with textScene: SCNText, xPosition: Float) -> SCNNode {
+//        let textNode = SCNNode(geometry: textScene)
+//        //let centerX = getTextCenter(from: textScene)
+//        let textVector = SCNVector3(x: xPosition, y: -1.0, z: -2.5)
+//        let xVectorScale: Float = 0.01
+//
+//        textNode.position = textVector
+//        textNode.scale = SCNVector3(x: xVectorScale, y: 0.01, z: 0.01)
+//
+//        return textNode
+//    }
+
     private func getTextCenter(from textNode: SCNText) -> Float {
         let (minVec, maxVec) = textNode.boundingBox
         let xVectorScale: Float = 0.01
@@ -106,15 +108,15 @@ class MainViewController: UIViewController {
         return Float(minVec.x - maxVec.x)/2.0 * xVectorScale
     }
     
-    func createBarNode(with bar: SCNBox, barXPosition: Float) -> SCNNode {
-        let barNode = SCNNode(geometry: bar)
-        bar.firstMaterial?.diffuse.contents = UIColor.green
-        barNode.position = SCNVector3(x: barXPosition, y: -1.0, z: -2.5)
-        
-        
-        return barNode
-    }
-    
+//    func createBarNode(with bar: SCNBox, barXPosition: Float) -> SCNNode {
+//        let barNode = SCNNode(geometry: bar)
+//        bar.firstMaterial?.diffuse.contents = UIColor.green
+//        barNode.position = SCNVector3(x: barXPosition, y: -1.0, z: -2.5)
+//
+//
+//        return barNode
+//    }
+
     func moveNodesUP(textCenter: Float,
                      textNode: SCNNode,
                      bar: SCNBox,
@@ -178,27 +180,41 @@ class MainViewController: UIViewController {
         
         sceneView.session.pause()
     }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let location = touches.first?.location(in: sceneView) else {
+            print("there was a problem with response data or location")
+            return
+        }
+        addNodeToSessionUsingFeaturePoints(location: location)
+    }
+
+    private func addNodeToSessionUsingFeaturePoints(location: CGPoint) {
+
+        let hitResultsFeaturePoints: [ARHitTestResult] =
+            sceneView.hitTest(location, types: .featurePoint)
+
+        if let hit = hitResultsFeaturePoints.first {
+            let anchor = ARAnchor(transform: hit.worldTransform)
+            sceneView.session.add(anchor: anchor)
+        }
+    }
 }
 
 extension MainViewController: ARSCNViewDelegate {
-//    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-//        // create a 3d plane from the anchor
-//        if let arPlaneAnchor = anchor as? ARPlaneAnchor {
-//            let plane = VirtualPlane(anchor: arPlaneAnchor)
-//            self.planes[arPlaneAnchor.identifier] = plane
-//            node.addChildNode(plane)
-//        }
-//    }
-//
-//    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-//        if let arPlaneAnchor = anchor as? ARPlaneAnchor, let plane = planes[arPlaneAnchor.identifier] {
-//            plane.updateWithNewAnchor(arPlaneAnchor)
-//        }
-//    }
-//
-//    func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
-//        if let arPlaneAnchor = anchor as? ARPlaneAnchor, let index = planes.index(forKey: arPlaneAnchor.identifier) {
-//            planes.remove(at: index)
-//        }
-//    }
+
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+         if !anchor.isKind(of: ARPlaneAnchor.self) {
+            guard let transactions = self.responseData?.transactions else {
+                return nil
+            }
+            let chartPosition = anchor.transform.translation
+            let graph = ARChartGraphNode()
+            graph.createChartGraph(at: chartPosition, with: transactions)
+            return graph
+        }
+        return nil
+    }
+
+
 }
